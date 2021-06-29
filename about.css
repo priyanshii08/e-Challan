@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+body{
+   margin: 0;
+   padding: 0;
+   font-family:"Poppins" sans-serif;
+   background-color: #12172b;
+}
+.container{
+  margin: 20px 40px;
+}
+
+
+.heading
+{font-size: 60px;
+  color: #fff;
+}
+span{
+  font-size: 30px;
+}
+.profiles{
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 30px;
+  width: 100%;
+}
+
+.profile{
+  flex-basis: 260px;
+  text-align: center;
+  color: white;
+  filter:  grayscale(100%);
+
+
+}
+.profile img{
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+}
+.profile:hover{
+  filter:grayscale(0);
+}
+.user-name{
+  margin-top: 30px;
+  font-size: 35px;
+}
+.profile p{
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: justify;
+  width: 200px;
+}
+
+@media only screen and (max-width:1150px) {
+  .profiles{
+    flex-direction: column;
+
+  }
+  .profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.profile p{
+  text-align: center;
+  margin: 20px 60px 80px 60px;
+  font-size: 20px;
+}
+@media only screen and (max-width:900px) {
+  .heading{
+    font-size: 40px;
+    color:#fff;
+    text-align: center;
+  }
+  .heading span{
+    font-size: 15px;
+  }
+  .profiles{
+  margin: 20px 0;
+
+  }
+
+.profile p{
+
+  margin: 20px 10px 80px 10px;
+
+}
+}

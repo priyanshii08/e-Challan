@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0 "charset="utf-8">
+    <title>Home Page </title>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+
+
+   <body>
+
+<!--heading with logo and name of project -->
+     <table  class="table1" cellspacing="1" style="background-color:auto;  background-attachment :fixed;" width="70%">
+   <tr>
+     <td><img src="imagess/logo1.png" alt="Traffic-Light" height="100px;"  style=" background-size: cover;border-radius:50%;"></td>
+     <td><h1  style="color:black; padding-left: 40%;">Online Traffic Payment</h1>
+        <p class="safe">
+      " Be responsive ,Be safe. "</p></td>
+   </tr>
+   </table>
+
+
+<!--this is slideShow of moving images -->
+    <div>
+     <div class="main">
+         <div class="content" style="background-color:gray;  background-attachment :fixed;
+           background-size: cover; ">
+           <div class="images">
+             <img class="img1"src="imagess/homeback.jpg">
+             <img class="img1"src="imagess/pay.webp">
+             <img class="img1"src="imagess/rsafety1.jpg">
+             <img class="img1"src="imagess/sign.jpg" alt="symbols">
+             <img class="img1"src="imagess/accident.jpg" alt="safety">
+              <img class="img1"src="imagess/signsss.png" alt="safety">
+           </div> <br><br>
+         </div>
+         <script>
+          var indexValue = 0;
+          function slideShow(){
+            setTimeout(slideShow, 3500);
+            var x;
+            const img = document.querySelectorAll(".img1");
+            for(x = 0; x < img.length; x++){
+              img[x].style.display = "none";
+            }
+            indexValue++;
+            if(indexValue > img.length){indexValue = 1}
+            img[indexValue -1].style.display = "block";
+          }
+          slideShow();
+         </script></div>
+         <br><br>
+
+<!-- this is the Navigation bar -->
+      <div>
+         <div class="navbar">
+           <ul>
+             <li><a class="active active2" href="#Home">Home</a></li>
+             <li><a class="active" href="#Payment">   Payment      </a>
+
+             <ul class="dropdown">
+               <li><li><a target="_blank" class="active1" href="Group_6.pdf">How to Pay </a></li>
+               <li><a target="_blank"class="active1"href="index.html">Admin login</a></li>
+               <li><a  target="_blank"class="active1"href="index.html">User login</a></li></li>
+             </ul></li>
+             <li><a class="active" href="#Fines and Rules">Fines and Rules</a></li>
+             <li><a class="active"href="Signals">Signals</a></li>
+             <li><a target="_blank"class="active" href="#news">News</a></li>
+              <li><a class="active" href="Feedback">Feedback</a></li>
+             <li><a class="active"href="#AboutUs">About Us </a></li>
+           </ul>
+         </div>
+         <script>
+         window.onscroll = function() {myFunction()};
+
+         var navbar = document.getElementsByClass("navbar");
+         var sticky = navbar.offsetTop;
+
+         function myFunction() {
+           if (window.pageYOffset >= sticky) {
+             navbar.classList.add("sticky");
+           } else {
+             navbar.classList.remove("sticky");
+           }
+         }
+         </script></div>
+
+<!--  the main content -->
+<div class="content1">
+
+    <div class="skill-row">
+      <table  class="pay">
+      <tr>
+        <td><img class="Payment" src="imagess/paySucess.png" alt="payment sucessfully"></td>
+        <td><h4> How To Pay </h4>
+              <p class="Payment1">Lorem ipsum dolor sit amet, quis in duis, iaculis id felis.tfjhgou;gjhloiy7rdxcgvfew456r78jnykvhyo;ihgftsxcghthrt                  . Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
+          </td>
+      </tr>
+  </div> <br><hr>
+  </table>
+
+
+           <div class="skill-row road">
+             <img class="Rules" src="imagess/road.jpg" alt="rules">
+             <h4>Rules and Fines</h4>
+             <p class="Rules1">Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
+           </div><br><hr>
+
+           <div class="skill-row sign ">
+             <img class="symbols" src="imagess/signsss.png" alt="symbols.jpg">
+             <h4>Road safety symbols</h4>
+             <p class="symbols1">Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
+           </div> <br><hr>
+
+           <div class="skill-row traffic" id="news">
+             <img class="News" src="imagess/traffic-news.png" alt="news.jpg" height="100%" width="30%">
+             <h4>NEWS</h4>
+             <p class="news1">Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
+           </div><br><hr>
+         </div>
+
+
+
+
+
+
+   </div>
+
+
+   <!-- this is footer -->
+<footer> <div class="bottom-container">
+
+    <a target="_blank"class="footer-link" href="https://www.linkedin.com/messaging/thread/2-YTgwMjRlZWEtOWM3Yi00NzI3LWEyYjYtMTdkOWY1MjE1NTEwXzAxMA==/">LinkedIn</a>
+    <a target="_blank" class="footer-link" href="https://twitter.com/">Facebook</a>
+    <a target="_blank"class="footer-link" href="https://www.instagram.com/">Instagram</a></a>
+    <a target="_blank"class="footer-link" href="C:\Users\Hp\Desktop\programming tools\web development\web development\minor project\home.html">Website</a>
+     <br>
+     <p class="he">© 2021.The Online Challan   </p>
+
+ </div>
+</footer>
+
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--main_contain-->
+
+<div class="main_body">
+  <section id="main11"class="main1">
+
+    <table cellspacing="20">
+    <td> <img class="img1"src="imagess/pay.webp" alt="payment">  </td>
+    <td><h2 style="  font-family:cursive;">FEEL FREE TO PAY YOUR CHALLAN</h2>
+    <p>Follow the instruction for sucessfull Payment.</p><br><br>
+    <a class="btn" href="sign_in.html"> Admin Sign-In</a>       <a class="btn " href="sign_in.html ">User Sign-In</a>
+    </td>
+    </table>
+  </section>
+
+  <section id="main12"class="main2">
+    <table cellspacing="20">
+      <tr>
+    <td>
+  <h2 style="  font-family:cursive;">violations</h2>
+<h4><em>Learn <b>Which</b> violation will lead to pay <b>How Much</b>!</em></h4>
+<p>The Indian Road rules is listed under the name, ‘Rules of the Road Regulation’, came into effect in July 1989 and have remained so to date.
+These rules and guidelines are relevant to the Indian drivers (be it those of two, three and four wheelers including buses and trucks), while on the road to make sure of a systematic traffic and a safe drive. Violating, transgressing or disrespecting any of these rules is a serious offence as according to the city specific traffic police rules as well as the Indian Motor Vehicle Act.
+</p><br>
+<a class="btn" href="https://www.bankbazaar.com/driving-licence/traffic-fines.html">Fines</a></td>
+    <td> <img class="img2"src="imagess/symbols.jpg" alt="violation"> </td>
+
+    </tr>
+    </table>
+  </section>
+
+  <section id="main13" class="main3">
+    <table cellspacing="20">
+      <tr>
+        <td><img class="img3"src="imagess/rsafety1.jpg" alt="Rules"></td>
+        <td><h2 style="  font-family:cursive;">Rules</h2>
+        <h4><em>Comply by the rules</em></h4>
+        <p>Understanding traffic signs is essential. Traffic signs act as silent conductors of the traffic on the road.
+Any person who holds a driving licence and is eligible to drive a vehicle should have proper knowledge of traffic signs.
+The government has made it mandatory for any person who wants to obtain a driving licence to be well-versed with the traffic signs.
+</p><br>  <a class="btn" href="section2.pdf"> Rules & Signs</a></td>
+      </tr>
+    </table>
+
+  </section>
+  <section id="main14"class="main4">
+    <table cellspacing="20">
+      <tr>
+        <td><h2 style="  font-family:cursive;">News</h2>
+        <h4><em>Have a sneek Peak onto current</em></h4>
+        <p style="width:70%;">If you’re planning a journey, our Traffic News tool can help you to avoid delays caused by accidents and roadworks.
+It’s now even easier for drivers to see live traffic updates, along a selected journey and route, or around a specific location. There’s nothing more frustrating for motorists than getting caught up in tail backs and unexpected delays, especially if this adds significant time to a journey. Whether you are planning a long weekend drive to visit friends or family elsewhere or simply commuting to work during rush hour, a bit of preparation before making the journey can really help.
+Our traffic report service can improve your ability to plan your journeys. It’s simple to get live traffic reports for your area. This is an excellent feature for drivers. Traffic news results show all the issues that might cause problems and delays - roadworks, temporary traffic lights and accidents. You’ll also get updates on the busiest sections of road, indicating how traffic is flowing.
+If all is going smoothly, for example, you’ll be informed that traffic is moving well - reassuring news as you set off and start driving.
+</p> <br> <a class="btn" href="https://www.ndtv.com/topic/live-traffic"> be updated...</a></td>
+
+        <td><img class="img4"src="imagess/traffic-news.png" alt="News"></td>
+      </tr>
+    </table>
+
+  </section>
+
+
+
+</div>

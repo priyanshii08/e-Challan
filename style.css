@@ -1,0 +1,286 @@
+html{
+scroll-behavior: smooth; }
+
+body{
+
+
+    background-attachment :fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+
+}
+  hr{
+    border-style:none;
+   border-top-style: dotted;
+  border-width: 5px;
+  border-color: gray;
+  width: 5%;
+  }
+
+.safe{
+  font-family: cursive;
+  color: brown;
+  padding-left: 65%;
+}
+.content{
+height: 500px;
+width: 100%;
+
+box-shadow: 1px 1px 15px rgba(0,0,0,0.4);
+
+}
+.content .images{
+height: 100%;
+width: 100%;
+
+
+}
+.images img{
+height: 100%;
+width: 100%;
+align-content: center;
+border-style: solid;
+}
+
+
+
+
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 36px;
+  line-height:36px;
+  background-color: #66BFBF;
+  font-family:sans-serif;
+  font-size: 13px;
+
+}
+li{
+
+  border-right :1px solid #156ee2;
+
+}
+.navbar>ul{
+  text-transform: uppercase;
+
+
+}
+.navbar>ul>li{
+  float : left;
+  list-style: none;
+  position: relative;
+  cursor: pointer;
+  font-size: 15px;
+}
+.active{
+  display :block;
+  padding : 0 28px;
+  color :white;
+  text-decoration :none;
+}
+.active1{
+  display :block;
+
+  padding : 0 15px;
+  color :white;
+  text-decoration :none;
+}
+
+a{
+  text-decoration: none;
+   padding : 0 28px;
+}
+
+a:hover  {
+  background-color :green;
+perspective: 1000px;}
+
+.dropdown{
+  position:absolute;
+  perspective: 1000px;
+  left:0;
+  padding:0;
+}
+
+.dropdown li{
+  background-color: #313131;
+  width: 100%;
+display: none;
+}
+
+.dropdown li:hover{
+  background: blue;}
+
+  .navbar li:hover>.dropdown li{
+    transform-origin: top center;
+    opacity:0;
+    display: block;
+  }
+
+  .navbar li:hover>.dropdown li:nth-child(1){
+    animation: animate 300ms ease-in-out forwards;
+    animation-delay: -150ms;
+}
+
+.navbar li:hover>.dropdown li:nth-child(2){
+  animation: animate 300ms ease-in-out forwards;
+  animation-delay: 0ms;
+}
+.navbar li:hover>.dropdown li:nth-child(3){
+  animation: animate 300ms ease-in-out forwards;
+  animation-delay: 150ms;
+}
+
+.navbar li:hover>.dropdown li:nth-child(4){
+  animation: animate 300ms ease-in-out forwards;
+  animation-delay: 300ms;
+}
+
+.navbar li:hover>.dropdown li:nth-child(5){
+  animation: animate 300ms ease-in-out forwards;
+  animation-delay: 450ms;
+}
+
+@keyframes animate {
+  0%{
+    opacity: 0;
+    transform: translateX(-100px)
+  }
+  70%{
+
+    transform: translateX(20px)
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0px)
+  }
+}
+
+
+.content1{
+  width: 100%
+}
+
+.skill-row{
+  background-attachment :fixed;
+  width: 100%;
+  margin: 100px auto 100px auto;
+  line-height:2;
+}
+
+.Payment {
+    background-attachment :fixed;
+  width: 50%;
+  float: left;
+  margin:auto auto 25px  30px;
+  border-radius: 50%;
+}
+
+.Rules {
+    background-attachment :fixed;
+  width: 15%;
+  float: right;
+  margin:auto auto 25px  30px;
+  border-radius: 30%;
+}
+
+.symbols {
+    background-attachment :fixed;
+  width: 15%;
+  float: left;
+  margin:auto 40px 25px  30px;
+  border-radius: 40%;
+}
+
+ .News{
+    background-attachment :fixed;
+  width: 15%;
+  float: right;
+  margin:auto auto 25px  30px;
+  border-radius: 40%;
+}
+
+.Payment1{
+  clear: right;
+}
+.Rules1{
+  clear: left;
+}
+.symbols1{
+    clear: right;
+}
+.news1{
+    clear: left;
+}
+.pay{
+  background-color: pink;
+  background-size: cover;
+}
+.road{
+  background-color: skyblue;
+  background-size: cover;
+}
+.sign{
+  background-color: lightyellow;
+  background-size: cover;
+}
+.traffic{
+  background-color: gray;
+  background-size: cover;
+}
+
+
+
+footer{
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  font-family:'merriweather' serif;
+  font-size:20px;
+  color: #40514E;
+  text-decoration: none;
+}
+
+.bottom-container{
+  background: #66BFBF;
+  margin-top:   25px ;
+ padding: 50px 0 20px;
+
+}
+
+.he{
+  color: #EAF6F6;
+  font-size: 0.75rem;
+  padding: 20px 0px;
+}
+
+p{
+  line-height: 2;
+}
+
+footer-link{
+  color:  #11999E;
+ margin:  10px 20px;
+ text-decoration: none;
+
+}
+
+
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + s {
+  padding-top: 60px;
+}
+.active2{
+  background-color: blue;
+  color: white;
+}

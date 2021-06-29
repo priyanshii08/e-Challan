@@ -1,0 +1,46 @@
+body{
+
+    background-image: url("homeback1.jpg");
+    background-attachment :fixed;
+    background-size: cover;
+
+}
+
+
+hr{
+  border-style:none;
+  border-top-style: solid ;
+  border-color: black;
+  border-width: 3px;
+  width:100%;
+}
+
+.detail{
+  border-style : solid;
+  border-width: medium;
+  margin :20px 200px 70px 100px ;
+  background-color:#b3ecff ;
+  padding: 30px 50px;
+  max-width: 80% ;
+}
+
+.tab12{
+padding: 24px;
+border: 3px solid black;
+ border-collapse: separate;
+color:black;
+ height: 150px;
+border-radius: 10px;
+width: 150px;
+text-align: center;
+}
+.tab11{
+  margin: auto 200px auto 350px;
+  border-spacing: 30px;
+
+
+}
+a:hover{
+  color: black;
+  text-decoration: none;
+}

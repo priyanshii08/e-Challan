@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home Page</title>
+<link rel="stylesheet" href="style_main.css">
+<!-- CSS only
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="C:\Users\Hp\Desktop\project\minor project\login-popup\style.css">
+
+
+  </head>
+
+
+  <body>
+
+    <!--navbar -->
+
+
+<div class="cont">
+
+    <header class= "sticky">
+      <a href="#" class="logo"> e-Challan</a>
+        <div class="navbar">
+      <ul class="ul1">
+        <li><a  class="nav1"href="home.html" target="_blank">Home</a> </li>
+        <li><a class="nav1" href="#" target="_blank">Payment</a>
+         <!-- this is dropdown of payment-->
+        <ul class="dropdown">
+          <li>
+          <li style="text-align:left;"><a target="_blank"class="active1"href="pay.pdf">How to Pay </a></li>
+          <li style="text-align:center"><a class="nav1" target="_blank"class="active1"href="http://localhost/phpdoc/minor%20project/admin/admin_login.php">Admin login</a></li>
+          <li style="text-align:center"><a class="nav1" target="_blank"class="active1"href="http://localhost/phpdoc/minor%20project/E-Challan/sign_in.php">User login</a></li></li>
+        </ul></li>
+
+        <li><a class="nav1" href="https://www.bankbazaar.com/driving-licence/traffic-fines.html" target="_blank" >Violation and Fines</a> </li>
+        <li><a class="nav1" href="India-Road-Traffic-Signs.pdf" >Rules and Sign </a> </li>
+        <li><a class="nav1" href="https://www.ndtv.com/topic/live-traffic" target="_blank">News</a> </li>
+        <li><a class="nav1" href="About.html" >About Us</a> </li>
+        <li><button type="button"  class="btn" name="button"><a href="http://localhost/phpdoc/minor%20project/E-Challan/sign_in.php">Login</a></button></li>
+
+      </ul>
+
+      </div>
+    </header>
+
+    <section class="banner">
+   <video src="imagess/vedio.mp4" muted loop autoplay></video>
+
+
+   <!--
+   <div class="box">
+     <div class="img-area">
+      <div class="img">
+      </div>
+      <h1>e-Challan</h1>
+     </div>
+     <div class="form">
+      <div class="close">&times;</div>
+      <h1>Log In</h1>
+      <form>
+        <div class="form-group">
+          <input type="text" placeholder="Email" class="form-control">
+        </div>
+        <div class="form-group">
+          <input type="password" placeholder="Password" class="form-control">
+        </div>
+        <div class="form-group">
+          <label><input type="checkbox">
+            Remember Me
+          </label>
+        </div>
+        <button type="button" class="btn">Log In</button>
+      </form>
+     </div>
+   </div>-->
+    </section>
+    <script >
+        window.addEventListener("scroll",function(){
+          var header=document.querySelector("header");
+          header.classList.toggle("sticky",window.scrollY>0);
+        })
+    </script>
+  <br>
+
+    <!--main content -->
+<div class="middle-container">
+
+<div class="row">
+<div class="col-md-6"> <div class="block login_main "data-move-y="200px"data-move-x="200px"> <a class="btn loginbtn " href="http://localhost/phpdoc/minor%20project/E-Challan/sign_in.php ">User Sign-In</a></div> </div>
+<div class="col-md-6"> <div class="block fine"data-move-y="200px"data-move-x="200px"><h3 class="text3"><em>Learn <b>Which</b> violation will lead to pay <b>How Much</b>!</em></h3>
+    <br> <a class="btn1 btn" href="https://www.bankbazaar.com/driving-licence/traffic-fines.html">How Much To Pay</a>
+</div> </div>
+</div>
+<div class="row">
+  <div class="col-md-4"> <div class="block back "data-move-x="-500px"data-rotate="90deg"><h2 class="text2"><strong><i>Hi User,</i></strong><br> <br>  We  are  hoping   you  could   answer  a  few   questions.... </h2> <br> <a target="_blank"class="btn2 btn" href="http://localhost/phpdoc/minor%20project/feedbacks.php">Feedback</a> </div> </div>
+  <div class="col-md-4"> <div class="block newsss"data-move-x="-200px"data-rotate="45deg"><h2 class="text1">Have a sneek Peak onto current</h2><a class="btn" href="https://www.ndtv.com/topic/live-traffic"> be updated...</a></div> </div>
+  <div class="col-md-4"> <div class="block back" data-move-x="500px"data-rotate="-90deg"> <h3 class="text4">To Know More About us</h3><br><h4 style="color:#fff;"> <a   class="about" target="_blank" href="About.html">Learn more ></a></h4></div> </div>
+</div>
+<div class="row">
+<div class="col-md-6"> <div class="block vedio" data-move-z="-500px"data-rotate-x="90deg" data-move-y="200px">
+   <video autoplay muted loop id="Myvedio"><source src="imagess/slide1.mp4" type="video/mp4"></video><h2 class="text">National Highways Helpline Number<br>- 1033 </h2> </div> </div>
+<div class="col-md-6"> <div class="block safety" data-move-z="-500px"data-rotate-x="90deg" data-move-y="200px"></div> </div>
+
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="jquery.smoove.js"></script>
+<script>
+  $(".block").smoove({offset:'40%'});
+</script>
+
+<!-- this is footer -->
+
+
+ <div class="bottom-container">
+ <a target="_blank"class="footer-link" href="https://www.facebook.com/neha.bargal.18"> <i class="fa fa-facebook"></i> </a>
+ <a target="_blank" class="footer-link" href="mailto:jainpriyanshi@email.com"><i class="fa fa-google-plus"></i></a>
+ <a target="_blank"class="footer-link" href="https://www.linkedin.com/in/anushka-khare-7bba93174"><i class="fa fa-linkedin"></i></a>
+ <a target="_blank"class="footer-link" href="https://github.com/priyanshii08"><i class="fa fa-github"></i></a>
+
+ <a target="_blank"class="footer-link website" href="home.html">Website</a>
+  <br>
+  <p class="he">© 2021 .e-Challan   </p>
+
+</div>
+
+
+</body>
+
+
+</html>
